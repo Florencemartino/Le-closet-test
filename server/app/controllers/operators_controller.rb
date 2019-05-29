@@ -9,11 +9,6 @@ class OperatorsController < ApplicationController
     @postes = Poste.all
   end
 
-  def add_poste
-    @poste = Poste.find(params[:id])
-    @operator = Operator.find(params[:id])
-    @poste.quantity = 0
-    @poste.quantity += 1
-  end
+
 end
 

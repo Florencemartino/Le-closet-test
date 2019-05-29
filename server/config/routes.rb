@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
     get 'index', to: 'operators#index', as: :index
     get 'operators/:id', to: 'operators#show', as: :operator
+    get '/operators/:operator_id/operator_poste/add_poste', to: "operators_poste#add_poste", as: :add_poste
+    patch '/operators/:operator_id/operator_poste/added_poste', to: "operators_poste#added_poste", as: :added_poste
+
   end
 
 
