@@ -1,7 +1,7 @@
 <h2> bonjour <%= @operator.first_name%> </h2>
 <p>   <% @postes.each do |poste|%> </p>
 <%= poste.category %>
-<%= link_to "Ajouter un poste !", add_poste_path(@operator), :class => "btn btn-primary" %>
+<%= link_to "Ajouter +1", add_poste_path(@operator), :class => "btn btn-primary" %>
 <% end %>
 
 
