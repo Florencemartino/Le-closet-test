@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_04_084602) do
+ActiveRecord::Schema.define(version: 2019_05_28_173321) do
 
   create_table "items", force: :cascade do |t|
     t.integer "product_id"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2019_03_04_084602) do
     t.integer "poste_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "quantity"
     t.index ["operator_id"], name: "index_operators_postes_on_operator_id"
     t.index ["poste_id"], name: "index_operators_postes_on_poste_id"
   end
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 2019_03_04_084602) do
     t.integer "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "quantity"
   end
 
   create_table "products", force: :cascade do |t|

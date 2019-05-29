@@ -1,0 +1,6 @@
+<h2> Bonjour, clique sur ton identifiant </h2>
+<% @operators.each do |operator| %>
+<h4> <%= operator.name %> </h4>
+<%= link_to "View Profile !", operator_path(operator), :class => "btn btn-primary" %>
+<% end %>
+

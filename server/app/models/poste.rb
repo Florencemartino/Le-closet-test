@@ -4,9 +4,4 @@ class Poste < ApplicationRecord
 
   enum category: %i(pickup checkup packup)
 
-  def to_builder
-    Jbuilder.new do |poste|
-      poste.(self, :id, :category)
-    end
-  end
 end
